@@ -20,8 +20,13 @@ This is my first time to build my personal blog. I usually take notes about what
 <hr>
 
 <blockquote>
-    We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-    —Anais Nin
+    Sometimes it is the people no one imagines anything of who do the things that no one can imagine.
+    —The Imitation Game
+</blockquote>
+
+<blockquote>
+    Stay weird, stay different.
+    —The Imitation Game
 </blockquote>
 
 
