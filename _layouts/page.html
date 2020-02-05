@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <h5 class="post-description">{{ page.description }}</h5>
+  </header>
+
+  <article class="post-content {{page.title}} clearfix">
+    {{ content }}
+  </article>
+
+  {% if page.research_interests %}
+    {% include research_interests.html %}
+  {% endif %}
+
+  {% if page.skills %}
+    {% include skills.html %}
+  {% endif %}
+
+  {% if page.languages %}
+    {% include languages.html %}
+  {% endif %}
+
+  <div id='news'><a name='news'></a></div>
+  {% if page.news %}
+    {% include news.html %}
+  {% endif %}
+
+  <div id='publications'><a name='publications'></a></div>
+  {% if page.papers %}
+    {% include papers.html %}
+  {% endif %}
+
+  {% if page.hobbies %}
+    {% include hobbies.html %}
+  {% endif %}
+
+
+
+  {% if page.social %}
+    {% include social.html %}
+  {% endif %}
+
+</div>

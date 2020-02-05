@@ -1,0 +1,23 @@
+<div class="papers">
+  <h2>Publications</h2>
+    {% assign paper = site.papers | reverse %}
+    {% for item in paper %}
+      <h4><b>{{ item.title }}</b></h4>
+        <h5>
+        {% assign last_index = item.authors.size %}
+        {% assign last_last_index = last_index | minus:1 %}
+        {% for author in item.authors %}
+          {% if author == 'Hsiao, Y.W.' or author == 'Hsiao, Y.W.*' %}<span class="me"><b>{{author}}</b></span>{%else%}{{author}}{% endif %}{% if forloop.index != last_index %},{% endif %}{% if forloop.index == last_last_index %} and{% endif %}
+        {% endfor %}
+        <br>
+        <span class="venue"><i>{{ item.venue }}</i></span>
+        {% if item.venue_shortcut %}<span class="venue"> (<b>{{ item.venue_shortcut }}</b>)</span>{% endif %}<span class="venue">, {{ item.date | date: "%b %Y" }}</span>{% if item.award %}<span class="award"> <b>({{ item.award }})</b></span>{% endif %}
+        <br>
+          {% if item.DOI %}<span class="supplementary"><a href="{{ item.DOI_link }}" target="_blank">DOI:{{item.DOI}}</a></span>{% endif %}
+        </h5>
+            <br>
+            <h5>{{ item.content }}</h5>
+    {% endfor %}
+</div>
+
+

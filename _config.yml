@@ -1,0 +1,151 @@
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+name: Yi-Wen Hsiao
+email: y.w.hsiao9419@gmail.com
+description: ""
+footer_text: >
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+url:  "" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+last_updated: Feb 2020 # leave blank if you don't want to display last updated
+
+# -----------------------------------------------------------------------------
+# Research Interests
+# -----------------------------------------------------------------------------
+research_interests:
+  - topic: 'Genomics'
+  - topic: 'Computational Biology'
+  - topic: 'Highly dimensional data analysis'
+  - topic: 'Machine learning & Artificial intelligence'
+
+# -----------------------------------------------------------------------------
+# Skills
+# -----------------------------------------------------------------------------
+skills:
+  - topic: 'R programming (statistical analysis & data visualizaion)'
+  - topic: 'Python'
+  - topic: 'Linux system'
+
+# -----------------------------------------------------------------------------
+# Languages
+# -----------------------------------------------------------------------------
+languages:
+  - topic: 'Mandarin (native)'
+  - topic: 'English (IELTS: overall 7; 2019.08 updated)'
+
+
+# -----------------------------------------------------------------------------
+# Hobbies
+# -----------------------------------------------------------------------------
+hobbies:
+  - topic: 'Traveling'
+  - topic: 'Watching films'
+  - topic: 'Sports'
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+github_username: ywhsiao
+twitter_username: YWHSIAO9419
+scholar_userid: 5AROU-8AAAAJ
+orcid_id: 0000-0002-9261-0353
+research_gate_profile: y.w.hsiao9419@gmail.com
+
+contact_note: #You can even add a little note about which of these is the best way to reach you.
+
+google_analytics: UA-XXXXXXXXX # out your google-analytics code
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+blog_name: Yiwen's Blog
+blog_description: 
+
+# Pagination
+paginate: 4
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+
+# Comments
+disqus_shortname: al-folio # put your disqus shortname
+
+# Optional features
+show_social_icons:  false
+enable_anchorjs:    false
+enable_katex:       true
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  papers:
+    defaults:
+      layout: post
+    output: true
+    permalink: /papers/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+news_limit: 5
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+
+# Includes & excludes
+include: ['_pages']
+exclude: [vendor]
+
+# Plug-ins
+plugins:
+    - jekyll-email-protect
+    - jekyll-paginate
+    - jekyll/scholar
+    - jemoji
+
+# Jekyll-Scholar
+scholar:
+
+  last_name: Einstein
+
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+# -----------------------------------------------------------------------------
+# Other settings
+# -----------------------------------------------------------------------------
+jquery_version: "1.12.4"
+katex_version: "0.9.0"
+anchorjs_version: "3.2.2"
