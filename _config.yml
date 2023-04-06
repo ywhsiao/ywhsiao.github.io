@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yi-Wen Hsiao's Personal Website"
+title                    : "Yi-Wen Hsiao's Website"
 title_separator          : "-"
 name                     : &name "Yi-Wen Hsiao"
 description              : &description "A PhD candidate in Biostatistics at National Taiwan University"
