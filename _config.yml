@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Yi-Wen Hsiao"
-  avatar           : "profile.png"
+  avatar           : "https://raw.githubusercontent.com/ywhsiao/ywhsiao.github.io/master/bio.jpeg"
   bio              : "A PhD candidate in Biostatistics at National Taiwan University & a visiting studient in the University of Melbourne"
   location         : "Melbourne, VIC"
   employer         :
