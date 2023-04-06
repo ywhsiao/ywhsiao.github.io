@@ -5,12 +5,6 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+### Journal Paper
+* **Hsiao, Y. W.**, Wang, L., and Lu, T. P. (2022) ["ceRNAR: An R package for identification and analysis of ceRNA-miRNA triplets.".]([https://pubmed.ncbi.nlm.nih.gov/34427821/](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010497) *PLoS Computational Biology*, 18(9), e1010497.
+* 
