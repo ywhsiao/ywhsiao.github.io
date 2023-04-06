@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Yi-Wen Hsiao's Personal Website"
 title_separator          : "-"
 name                     : &name "Yi-Wen Hsiao"
-description              : &description "A PhD candidate in Biostatistics at National Taiwan University & a visiting studient in the University of Melbourne"
+description              : &description "A PhD candidate in Biostatistics at National Taiwan University"
 url                      : https://ywhsiao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ywhsiao/ywhsiao.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Yi-Wen Hsiao"
   avatar           : "https://raw.githubusercontent.com/ywhsiao/ywhsiao.github.io/master/bio.jpeg"
-  bio              : "A PhD candidate in Biostatistics at National Taiwan University & a visiting studient in the University of Melbourne"
+  bio              : "A PhD candidate in Biostatistics at National Taiwan University"
   location         : "Melbourne, VIC"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
