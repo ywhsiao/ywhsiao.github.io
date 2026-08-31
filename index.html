@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yi-Wen Hsiao - Academic Homepage</title>
+    <meta name="description" content="A one-page academic homepage with a small interactive terminal." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="home" class="page">
+      <section class="intro">
+        <figure class="portrait" aria-label="Profile photo placeholder">
+          <img src="./assets/portrait-blurred.png?v=3" alt="Yi-Wen Hsiao" />
+        </figure>
+
+        <div class="bio">
+          <h1>Yi-Wen Hsiao</h1>
+          <p class="role">Researcher interested in AI, data, and health.</p>
+          <p>
+            I am building a research path around practical machine learning,
+            multimodal biomedical data science, and trustworthy AI for cancer
+            prognosis and clinical decision support.
+          </p>
+          <div class="profile-lines" aria-label="Profile details">
+            <p>💼 Postdoc @ Cedars-Sinai</p>
+            <p>🎓 PhD @ National Taiwan University</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="terminal-section" aria-label="Interactive terminal">
+        <div class="terminal" data-terminal>
+          <div class="terminal-chrome">
+            <div class="dots" aria-hidden="true">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+            </div>
+            <p>yiwen@portfolio - zsh</p>
+            <button type="button" data-demo>replay</button>
+          </div>
+          <div
+            class="terminal-screen"
+            data-output
+            tabindex="0"
+            role="textbox"
+            aria-label="Interactive terminal. Type help and press enter."
+          >
+            <p class="line live-line">
+              <span class="prompt">yiwen@portfolio:~$</span>
+              <span data-live></span><span class="cursor" aria-hidden="true"></span>
+            </p>
+          </div>
+          <div class="terminal-bottom">
+            <span>try</span>
+            <button type="button" data-chip="help">help</button>
+            <button type="button" data-chip="about">about</button>
+            <button type="button" data-chip="news">news</button>
+            <button type="button" data-chip="projects">projects</button>
+            <button type="button" data-chip="publications">publications</button>
+            <button type="button" data-chip="teaching/service">teaching/service</button>
+            <button type="button" data-chip="contact">contact</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span aria-hidden="true">📣</span> News</h2>
+        <div class="notice">
+          <p><span class="date">(Aug ‘26)</span> Our PREDICT Breast update manuscript was accepted with minor revision at the <em>Journal of the National Comprehensive Cancer Network</em> (IF: 17.5)!</p>
+          <p><span class="date">(May ‘26)</span> Our latest study evaluating large language models (LLMs) for chemotherapy recommendations was presented as a poster at <a href="https://cedarsresearchday.vfairs.com/">Cedars-Sinai Research Day XIV</a>.</p>
+          <p><span class="date">(Sep ‘25)</span> Our <a href="https://jnccn.org/view/journals/jnccn/23/6/article-p227.xml?print">published paper validating PREDICT v3 using US SEER data</a> received the Golden Paper Award (3rd Place) from the Cedars-Sinai Postdoctoral Society.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span aria-hidden="true">🔬</span> Research Interests</h2>
+        <p class="research-line">
+          I build <strong>AI systems for biomedical discovery and clinical
+          decision support</strong>, with the goal of making machine learning a
+          useful and trustworthy partner in understanding complex patient data.
+          My research lies at the intersection of <strong>AI for health</strong>
+          and <strong>multimodal biomedical data science</strong>, where I
+          develop computational models to predict <span>cancer prognosis and
+          disease risk</span> by integrating genomics, electronic health records,
+          pathology images, and other biomedical data. My long-term vision is to
+          develop <strong>agentic AI systems for precision medicine</strong>
+          that can synthesize multimodal patient information, support
+          <span>treatment and therapy recommendations</span>, and help identify
+          <span>appropriate, personalized interventions</span> to improve
+          healthcare decision-making.
+        </p>
+        <p class="keywords">
+          <strong>Keywords:</strong> AI for Science, AI for Health, Machine
+          Learning, Responsible AI, Generative Models, Agentic AI, LLM,
+          Algorithmic Fairness, multimodal biomedical data, genomics,
+          electronic health records, pathology images, cancer prognosis,
+          disease prediction, treatment benefit estimation, intervention
+          planning, clinical decision support.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span aria-hidden="true">🛠️</span> Selected Projects</h2>
+        <ul class="project-list">
+          <li>
+            <a href="https://www.pnas.org/doi/10.1073/pnas.2408345121">Customized Single-Cell RNA-seq Workflow</a>
+            <span class="date">('24-'25)</span> - Developed a tailored scRNA-seq pipeline to distinguish
+            CRISPR-transduced from non-transduced retinal cells and characterize
+            RNA editing outcomes following compact CRISPR-Cas13-mediated gene
+            therapy.
+          </li>
+          <li>
+            <a href="https://github.com/ywhsiao/RNA-editing-pipeline">RNA-Editing Analysis Pipeline</a>
+            <span class="date">('24-'25)</span> - Developed an end-to-end bulk RNA-seq workflow integrating
+            expression quantification, differential expression, A-to-I
+            RNA-editing profiling, variant annotation, and pathway-level
+            interpretation using GSEA/GSVA.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span aria-hidden="true">📄</span> Selected Publications</h2>
+        <ul>
+          <li>
+            Noel, L., <strong>Hsiao, Y.W.</strong>, He, Y., Hung, A., Cui, X.,
+            Ray, E., Moore, J.H., Peng, P.C., Huang, X. (2026) Benchmarking
+            large language models for identifying transcription factor
+            regulatory interactions. <em>Bioinformatics</em>.
+            <a href="https://doi.org/10.1093/bioinformatics/btaf653">doi:10.1093/bioinformatics/btaf653</a>.
+          </li>
+          <li>
+            Pharoah, P.D., <strong>Hsiao, Y.W.</strong>, Wishart, G.C., Peng,
+            P.C. (2025) PREDICT breast v4.0: An update to the PREDICT breast
+            prognostic model. <em>BMC Research Notes</em>.
+            <a href="https://doi.org/10.1186/s13104-025-07552-1">doi:10.1186/s13104-025-07552-1</a>.
+          </li>
+          <li>
+            <strong>Hsiao, Y.W.</strong>, Wishart, G.C., Pharoah, P.D., Peng, P.C.
+            (2025) Assessing the Performance of the PREDICT Breast Version 3.0
+            Prognostic Tool in Patients With Breast Cancer in the United States.
+            <em>Journal of the National Comprehensive Cancer Network</em>.
+            <a href="https://doi.org/10.6004/jnccn.2025.7014">doi:10.6004/jnccn.2025.7014</a>.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span aria-hidden="true">🏆</span> Selected Awards</h2>
+        <ul>
+          <li><span class="date">'25</span> Golden Paper Award, Cedars-Sinai Postdoc Society.</li>
+          <li><span class="date">'25</span> <a href="https://www.aacr.org/professionals/meetings/aacr-travel-grants/scholar-in-training-awards-annual-meeting/">AACR Scholar-in-Training Award</a>, AACR-TOUCH / The Black Breast Cancer Alliance.</li>
+          <li><span class="date">'25</span> <a href="https://genestogenomes.org/meet-the-2025-presidential-members-part-1/">Presidential Membership Award</a>, Genetics Society of America (GSA).</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span aria-hidden="true">📚</span> Teaching, Mentorship, and Service</h2>
+        <ul>
+          <li>
+            <span class="date">'26</span>
+            Seminar planning committee,
+            <a href="https://www.varianteffect.org/">Variant Effects Seminar Series (VESS)</a>.
+          </li>
+          <li>
+            <span class="date">'25 &amp; '26</span>
+            Assistant Coach,
+            <a href="https://cedars.nationalcampus.ai/project/31/">National AI Campus</a>
+            @ Cedars-Sinai.
+          </li>
+          <li>
+            <span class="date">'26</span>
+            Reviewer, 2027 Pacific Symposium on Biocomputing.
+          </li>
+          <li>
+            <span class="date">'25</span>
+            Co-mentor, <a href="https://www.cedars-sinai.edu/education/professional-training-programs/internship/inspire.html">Cedars-Sinai INSPIRE program</a>.
+          </li>
+          <li>
+            <span class="date">'25</span>
+            Reviewer, BMC Cancer.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section contact">
+        <h2 class="section-title"><span aria-hidden="true">✉️</span> Contact</h2>
+        <p>
+          I am happy to talk about research, projects, or collaborations.
+        </p>
+        <p class="links">
+          <a href="mailto:ywen.hsiao@gmail.com">ywen.hsiao@gmail.com</a>
+          <a href="https://github.com/ywhsiao">GitHub</a>
+          <a href="https://www.linkedin.com/in/yi-wen-hsiao-b30850271/">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=5AROU-8AAAAJ&amp;hl=en">Google Scholar</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Yi-Wen Hsiao.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
