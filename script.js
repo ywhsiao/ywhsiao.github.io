@@ -14,9 +14,9 @@ const responses = {
   projects: 'Customized Single-Cell RNA-seq Workflow; RNA-Editing Analysis Pipeline',
   publications: 'Noel et al. 2026; Pharoah et al. 2025; Hsiao et al. 2025',
   awards: 'Golden Paper Award; AACR-TOUCH Scholar-in-Training Award; GSA Presidential Membership Award',
-  teaching: "Teaching, mentorship, and service: '25 & '26 Assistant Coach, National AI Campus @ Cedars-Sinai; '25 Co-mentor, Cedars-Sinai INSPIRE program; reviewer for PSB and BMC Cancer.",
-  service: "Service: '26 Reviewer, 2027 Pacific Symposium on Biocomputing; '25 Reviewer, BMC Cancer.",
-  'teaching/service': "Teaching, mentorship, and service: '25 & '26 Assistant Coach, National AI Campus @ Cedars-Sinai; '26 Reviewer, 2027 Pacific Symposium on Biocomputing; '25 Co-mentor, Cedars-Sinai INSPIRE program; '25 Reviewer, BMC Cancer.",
+  teaching: "Teaching, mentorship, and service: '25 & '26 Assistant Coach, National AI Campus @ Cedars-Sinai; '25 Co-mentor, Cedars-Sinai INSPIRE program; reviewer for SMM4H-HeaRD, PSB, and BMC Cancer.",
+  service: "Service: '26 Reviewer, SMM4H-HeaRD 2026 Workshop and Shared Tasks; '26 Reviewer, 2027 Pacific Symposium on Biocomputing; '25 Reviewer, BMC Cancer.",
+  'teaching/service': "Teaching, mentorship, and service: '26 SMM4H-HeaRD reviewer; '25 & '26 Assistant Coach, National AI Campus @ Cedars-Sinai; '26 Reviewer, 2027 Pacific Symposium on Biocomputing; '25 Co-mentor, Cedars-Sinai INSPIRE program; '25 Reviewer, BMC Cancer.",
   contact: 'email: ywen.hsiao@gmail.com',
 };
 
