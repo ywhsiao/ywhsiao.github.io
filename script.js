@@ -9,7 +9,10 @@ let runningDemo = false;
 const responses = {
   help: 'commands: about, news, research, projects, publications, awards, teaching/service, contact, clear',
   about: 'Yi-Wen Hsiao - Researcher interested in AI, data, and health.',
-  news: 'Latest: Our PREDICT Breast update manuscript was accepted with minor revision at the Journal of the National Comprehensive Cancer Network (IF: 17.5)!',
+  get news() {
+    const latest = document.querySelector('[data-news] p');
+    return latest ? `Latest: ${latest.innerHTML}` : 'No news yet.';
+  },
   research: 'interests: machine learning, AI for health, biomedical data, responsible AI.',
   projects: 'Customized Single-Cell RNA-seq Workflow; RNA-Editing Analysis Pipeline',
   publications: 'Noel et al. 2026; Pharoah et al. 2025; Hsiao et al. 2025',
